@@ -9,7 +9,7 @@ def test_accessible_when_valid_url_and_has_connection(
     monkeypatch.setattr(main, "has_internet_connection", lambda: True)
     assert (
         main.can_access_google_page("https://google.com")
-        == "Not accessible"
+        == "Accessible"
     )
 
 
